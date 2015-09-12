@@ -1,0 +1,26 @@
+Fibonacci Web Server
+
+In order to build and run this program:
+
+- You would have to install Go Prgramming Language(https://golang.org) first,
+- ... and test your installtion(https://golang.org/doc/install#testing).
+
+Steps to install and run:
+
+- go get github.com/Unknwon/fws
+- $GOPATH/bin/fws
+
+The server is now running on http://localhost:3000/ .
+
+Some examples of using Fibonacci sequence calculator:
+
+- 422: curl -i http://localhost:3000/fibonacci?n=-1
+- 200: curl -i http://localhost:3000/fibonacci?n=0
+- 200: curl -i http://localhost:3000/fibonacci?n=1
+- 200: curl -i http://localhost:3000/fibonacci?n=5
+- 422: curl -i http://localhost:3000/fibonacci?n=100
+
+Limitations:
+
+If the Fibonacci number is too large, server will return 422 means unprocessable.
+
